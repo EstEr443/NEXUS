@@ -2264,7 +2264,7 @@ function _makeFaviconBadge() {
 
 
 function initPeer(preferredCode) {
-  var _srv = { host:'0.peerjs.com', port:443, path:'/', secure:true };
+  var _srv = { host:'nexus-b740.onrender.com', port:443, path:'/peerjs', secure:true };
   var code = preferredCode || null;
   myPeer = new Peer(code, {
     host: _srv.host, port: _srv.port, path: _srv.path, secure: _srv.secure, debug: 0,
@@ -7516,7 +7516,7 @@ function renderAboutSettings() {
     +'<div style="font-size:12px;color:var(--t3);font-family:\'JetBrains Mono\',monospace;">wersja 2.1.0 · P2P · WebRTC</div>'
     +'</div>'
     +srow('🔒','Szyfrowanie','Połączenia P2P szyfrowane przez WebRTC DTLS/SRTP','')
-    +srow('🌐','Sygnalizacja','PeerJS 1.5.2 · nexus-fj4a.onrender.com','')
+    +srow('🌐','Sygnalizacja','PeerJS 1.5.2 · nexus-b740.onrender.com','')
     +srow('💾','Dane lokalne','Wszystko zapisane w localStorage — brak serwera','')
     +srow('🤖','Technologie','HTML5 · CSS3 · Vanilla JS · Web Audio API · WebRTC','');
 }
